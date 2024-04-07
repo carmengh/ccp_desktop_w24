@@ -11,3 +11,10 @@ function myFunction() {
     }
   }
 })
+
+let button = document.querySelector('#top');
+button.addEventListener("click", function(){
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  window.scrollTo();
+});
